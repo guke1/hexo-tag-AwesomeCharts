@@ -1,0 +1,9 @@
+<div style="width: <%- width %>;margin: 0 auto">
+    <canvas id="<%- id %>" style="height: <%- height %>px"></canvas>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/d3/6.3.1/d3.min.js"></script>
+<script type="text/javascript">
+    var ctx = document.getElementById('<%- id %>').getContext('2d');
+    var options = <%= option %>;
+    new D3(ctx, options);
+</script>

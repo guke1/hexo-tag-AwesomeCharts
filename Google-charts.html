@@ -1,0 +1,9 @@
+<div style="width: <%- width %>;margin: 0 auto">
+    <canvas id="<%- id %>" style="height: <%- height %>px"></canvas>
+</div>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    var ctx = document.getElementById('<%- id %>').getContext('2d');
+    var options = <%= option %>;
+    new Google-Chart(ctx, options);
+</script>
